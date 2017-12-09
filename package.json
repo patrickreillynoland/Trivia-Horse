@@ -1,0 +1,24 @@
+{
+  "name": "triviahorse",
+  "version": "1.0.0",
+  "description": "Use your words, not your balls.",
+  "main": "server/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/index.js"
+  },
+  "keywords": [
+    "trivia",
+    "horse"
+  ],
+  "author": "Patrick Noland",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.17.1",
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "prerender": "^5.1.0"
+  }
+}
