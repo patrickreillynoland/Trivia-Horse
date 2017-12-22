@@ -1,0 +1,34 @@
+/* Main View */
+.body {
+    font-family: 'Inconsolata', monospace;
+}
+
+.logo {
+    margin: .5em;
+    font-family: 'Poppins', sans-serif;
+}
+
+.playfield {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+}
+    .playfield__left {
+        height: 10em;
+        width: 50%;
+        display: block;
+        float: left;
+        background-color: rgb(185, 22, 16);
+    }
+    .playfield__right {
+        height: 10em;
+        width: 50%;
+        display: block;
+        float: right;
+        background-color: coral;
+    }
+    .playfield__player {
+        margin: 1em;
+        font-family: 'Poppins', sans-serif;
+    }
+

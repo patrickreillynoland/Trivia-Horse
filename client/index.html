@@ -1,25 +1,33 @@
 <!DOCTYPE html>
 <html lang="en" ng-app="Triviahorse">
   <head>
+    <base href='/'>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Triviahorse</title>
-    <meta name="description" content="Page description">
-
-    <link rel="stylesheet" href="mystyles.css">
+    <meta name="description" content="TRIVIAHORSE - A trivia game">
+    <link href="https://fonts.googleapis.com/css?family=Inconsolata|Poppins" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.css">
   </head>
   <body>
     <div class="controller">
-        <nav id="navbar" class="navbar navbar-default rich-red"></nav>
-        <h1>TRIVIAHORSE</h1>
+        <nav id="navbar" class="navbar navbar-default rich-red"><h4 class="logo">TRIVIAHORSE</h4></nav>
         <div ng-view></div>
     </div>
+    <script
+			src="http://code.jquery.com/jquery-3.2.1.js"
+			integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-route.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.4/angular-resource.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular-animate.js"></script>
+    <script data-require="ui-bootstrap@*" data-semver="0.10.0" src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
     <script src="app.js"></script>
     <script src="controllers.js"></script>
+    <script src="services.js"></script>
   </body>
 </html>
