@@ -1,9 +1,12 @@
+let axios = require('axios');
+
 exports.random = function() {
-    var question = function() {
+    return new Promise(function(resolve, reject) {
         axios.get('https://opentdb.com/api.php?amount=1&type=multiple')
-        .then(function(res) {
-            return res;
+        .then(resolve => {
+            console.log(resolve);
+        }).catch(reject => {
+            console.log(reject);
         })
-    }
-    return question;
+    })
 }

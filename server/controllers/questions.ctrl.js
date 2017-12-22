@@ -1,16 +1,11 @@
 var express = require('express');
 var procedures = require('../procedures/questions.proc');
-
+var request = require('request');
 var router = express.Router();
 
-router.route('/')
-    .get(function(req, res) {
-        procedures.random()
-        .then(function(info) {
-            res.send(info);
-        }, function(err) {
-            res.sendStatus(500);
-        });
-    })
+router.get('/', function(req, res, next) {
+        request('https://opentdb.com/api.php?amount=1&type=multiple')
+        .pipe(res);
+    });
     
 module.exports = router;

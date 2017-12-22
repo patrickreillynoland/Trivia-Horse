@@ -5,6 +5,6 @@ angular.module('Triviahorse.controllers', ['ngResource', 'ui.bootstrap', 'Trivia
     }
 }])
 .controller('QuestionsController', ['$scope', 'QuestionsService', function($scope, QuestionsService) {
-    $scope.question = QuestionsService.question();
+    $scope.question = QuestionsService.getQuestion();
     console.log($scope.question);
 }]);
