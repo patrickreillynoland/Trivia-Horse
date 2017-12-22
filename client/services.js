@@ -4,7 +4,7 @@ angular.module('Triviahorse.services', [])
         return new Promise (function(resolve, reject) {
             let data = $http.get('/api/questions/')
             data.onload = function() {
-                if ()
+                //TO-DO: Run questions to front
             }
             .then(function(response) {
                 let question = JSON.stringify(response.results);
